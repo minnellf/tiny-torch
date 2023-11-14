@@ -7,7 +7,8 @@ from torch import nn, optim
 from vww_torch import MobileNetV1
 from tqdm import tqdm
 
-IMAGE_SIZE = 96
+# IMAGE_SIZE = 96
+IMAGE_SIZE = 128
 BATCH_SIZE = 32
 EPOCHS = 20
 BASE_DIR = os.path.join("/home-ssd/datasets/vw", 'vw_coco2014_96')
