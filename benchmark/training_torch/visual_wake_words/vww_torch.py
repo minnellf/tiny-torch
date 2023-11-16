@@ -35,7 +35,7 @@ def conv(in_channels, out_channels, kernel_size=3, stride=1, padding=1, groups=1
         kernel_size=(kernel_size, kernel_size),
         weight_bit_width=weight_bits,
         input_bit_width=act_bits,
-        # outut_bit_width=act_bits,
+        outut_bit_width=act_bits,
         stride=stride,
         padding=padding, 
         bias=bias, 
@@ -43,7 +43,7 @@ def conv(in_channels, out_channels, kernel_size=3, stride=1, padding=1, groups=1
         weight_quant= Int8WeightPerTensorFixedPoint,
         bias_quant=Int16Bias,
         input_quant=Int8ActPerTensorFixedPoint,
-        # output_quant=Int9ActPerTensorFixedPoint,
+        output_quant=Int8ActPerTensorFixedPoint,
     )
 
 def relu(bit_width=8):
